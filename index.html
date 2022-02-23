@@ -1,24 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Better Day</title>
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <style>
-      @font-face {
-        font-family: "Pretendard-Regular";
-        src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
-          format("woff");
-        font-weight: 400;
-        font-style: normal;
-      }
-    </style>
-  </head>
 
-  <body>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Better Day</title>
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    @font-face {
+      font-family: "Pretendard-Regular";
+      src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff") format("woff");
+      font-weight: 400;
+      font-style: normal;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="bgWrapper">
     <h1 class="hidden">The better day App</h1>
     <div class="wrapper">
       <h2>To do list</h2>
@@ -52,11 +53,12 @@
         </li> -->
       </ul>
       <footer>
-        <span>🎃 오늘의 할일이 4개 남았어요!</span>
+        <span>🎃 오늘의 할일이 n개 남았어요!</span>
         <button>전체삭제</button>
       </footer>
     </div>
+  </div>
+  <script src="/js/script.js"></script>
+</body>
 
-    <script src="/js/script.js"></script>
-  </body>
 </html>

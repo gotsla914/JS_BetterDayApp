@@ -1,12 +1,33 @@
 html {
     font-size: 62.5%;
     width: 100%;
+    /* background: url(/imgs/bg01.jpg); */
+    /* background-size: cover;
+    background-attachment: fixed; */
+}
+
+.bgWrapper {
     background: url(/imgs/bg01.jpg);
     background-size: cover;
     background-attachment: fixed;
+    height: 100vh;
+    position: relative;
+}
+
+.bgWrapper::before {
+    content: "";
+    background-color: rgb(122, 122, 122);
+    background-size: cover;
+    opacity: 0.5;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
 }
 
 .wrapper {
+    position: relative;
     font: 500 1.9em/1.9em "Pretendard-Regular", "Noto Sans KR", sans-serif;
     width: 100%;
     margin: 2em auto;
@@ -16,7 +37,6 @@ html {
     padding: 2.5em;
     background: url(/imgs/bg02.jpg);
     background-size: 150%;
-    /* background: linear-gradient(to right, rgb(168, 143, 188) 0%, rgb(255, 207, 207) 100%); */
 }
 
 .wrapper>h2 {
@@ -31,11 +51,11 @@ html {
     margin: 2rem 1rem 2rem 1rem;
 }
 
-input[type='text']{
+input[type='text'] {
     padding-left: 2rem;
     vertical-align: text-top;
     font: 1.5rem/1.5rem "Pretendard-Regular", "Noto Sans KR", sans-serif;
-  }
+}
 
 
 input:focus {
@@ -54,13 +74,15 @@ input:focus {
     outline: none;
     cursor: pointer;
     color: #fff;
-    /* js위한 밑 두줄추가 */
-    opacity: 0.6;   
+
+    /* css for js */
+    opacity: 0.6;
     pointer-events: none;
 }
-    /* js위한 밑 두줄추가 */
+
+/* css for js */
 .wrapper>.inputField>button.active {
-    opacity: 1;   
+    opacity: 1;
     pointer-events: auto;
 }
 
@@ -76,9 +98,7 @@ input:focus {
 .wrapper>.todoList {
     line-height: 2.9rem;
     display: block;
-
-    /* 높이제한 추가 */
-    max-height: 25rem;
+    height: 25rem;
     overflow-y: auto;
 }
 
